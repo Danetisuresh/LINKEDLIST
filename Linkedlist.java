@@ -1,7 +1,6 @@
 package Com.Bridgelabz;
 
 public class Linkedlist {
-
     Node head;
     Node tail;
 
@@ -46,5 +45,8 @@ public class Linkedlist {
         Node tempNode = previousNode.next;
         previousNode.next = newNode;
         newNode.next = tempNode;
+    }
+    public void pop() {
+        this.head = this.head.next;
     }
 }
